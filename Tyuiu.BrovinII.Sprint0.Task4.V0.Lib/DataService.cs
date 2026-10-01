@@ -20,9 +20,16 @@ namespace Tyuiu.BrovinII.Sprint0.Task4.V0.Lib
         {
             return a * b;
         }
-        public static int Division(int a, int b)
+        public static double Division(int a, int b)
         {
-            return a / b;
+            if (b==0){
+                Console.WriteLine("На ноль делить нельзя", b);
+                return -1;
+            }
+            else
+            {
+                return a / b;
+            }
         }
     }
 }
